@@ -10,7 +10,7 @@ const tempMovie = document.querySelector(".movie")
 
 
 
-let linkOmdb = (movieName, page) => `http://www.omdbapi.com/?apikey=f68eea0e&s=${movieName}&page=${page}`;
+let linkOmdb = (movieName, page) => `https://www.omdbapi.com/?apikey=f68eea0e&s=${movieName}&page=${page}`;
 
 
 
