@@ -6,14 +6,7 @@ const searchBtn = document.querySelector(".js-form")
 const searchInput = document.querySelector(".js-form-search_input")
 const tempMovie = document.querySelector(".movie")
 
-
-
-
-
 let linkOmdb = (movieName, page) => `https://www.omdbapi.com/?apikey=f68eea0e&s=${movieName}&page=${page}`;
-
-
-
 
 templaterender = (item => {
     // console.log(item);
@@ -24,7 +17,7 @@ templaterender = (item => {
     movieInfo[2].textContent = item.Year;
     movieInfo[3].dataset.id = item.imdbID;
     return element;
-
+    
 })
 
 render = (data) => {
@@ -44,7 +37,7 @@ searchBtn.addEventListener("submit", (e) => {
         let link = linkOmdb(inputName, 1);
         getData(link)
     }
-
+    
 });
 
 let page = 1;
