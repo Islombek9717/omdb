@@ -22,7 +22,7 @@ templaterender = (item => {
     movieInfo[0].src = item.Poster;
     movieInfo[1].textContent = item.Title;
     movieInfo[2].textContent = item.Year;
-    movieInfo[3].textContent = item.imdbID;
+    movieInfo[3].dataset.id = item.imdbID;
     return element;
 
 })
